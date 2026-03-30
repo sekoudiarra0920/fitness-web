@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Pro | Transforma tu Cuerpo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<div id="miModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <div id="modal-body">
+        </div>
+        <button class="btn-cerrar" onclick="cerrarModal()">Entendido 💪</button>
+    </div>
+</div>
+
 <body>
     <header>
         <div class="logo">💪 Fitness Pro</div>
@@ -27,12 +37,24 @@
     <section id="features">
         <h2>¿Por qué Fitness Pro?</h2>
         <div class="container">
-            <div class="feat-card"><h3>⚡ Eficiencia</h3><p>Resultados en menos tiempo.</p></div>
-            <div class="feat-card"><h3>📈 Progreso</h3><p>Seguimiento de tus marcas.</p></div>
-            <div class="feat-card"><h3>🍏 Nutrición</h3><p>Guías para potenciar tu entreno.</p></div>
+            <div class="feat-card">
+                <h3>⚡ Eficiencia</h3>
+                <p>Resultados en menos tiempo.</p>
+            </div>
+            <div class="feat-card">
+                <h3>📈 Progreso</h3>
+                <p>Seguimiento de tus marcas.</p>
+            </div>
+            <div class="feat-card">
+                <h3>🍏 Nutrición</h3>
+                <p>Guías para potenciar tu entreno.</p>
+            </div>
         </div>
     </section>
 
-    <footer><p>© 2026 Fitness Pro - By SekouDB</p></footer>
+    <footer>
+        <p>© 2026 Fitness Pro - By SekouDB</p>
+    </footer>
 </body>
-</html> 
+
+</html>
