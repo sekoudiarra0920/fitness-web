@@ -43,3 +43,22 @@ window.onclick = function(event) {
     let modal = document.getElementById("miModal");
     if (event.target == modal) { cerrarModal(); }
 }
+function enviarFormulario() {
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+
+    if (nombre === "" || email === "") {
+        abrirModal(`
+            <h2 style="color:#ff4444">⚠️ Error</h2>
+            <p>Por favor, rellena todos los campos para poder ayudarte.</p>
+        `);
+    } else {
+        abrirModal(`
+            <h2 style="color:#00ff88">¡Mensaje Recibido!</h2>
+            <p>Gracias <b>${nombre}</b>. Hemos recibido tu interés y te escribiremos a <b>${email}</b> en menos de 24 horas.</p>
+        `);
+        // Limpiar campos
+        document.getElementById("nombre").value = "";
+        document.getElementById("email").value = "";
+    }
+}

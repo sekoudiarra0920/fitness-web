@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Fitness Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="miModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <div id="modal-body">
+        </div>
+        <button class="btn-cerrar" onclick="cerrarModal()">Entendido 💪</button>
+    </div>
+</div>
+<body>
+    <header>
+        <div class="logo">💪 Fitness Pro</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="rutinas.html">Rutinas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="contacto-container">
+        <h1>Ponte en Contacto</h1>
+        <p>¿Tienes dudas? Déjanos tus datos y un entrenador te escribirá.</p>
+        
+        <div class="form-card">
+            <div class="input-group">
+                <label>Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ej: Sekou Diarra">
+            </div>
+            <div class="input-group">
+                <label>Correo Electrónico</label>
+                <input type="email" id="email" placeholder="tu@email.com">
+            </div>
+            <div class="input-group">
+                <label>¿Cuál es tu objetivo?</label>
+                <select id="objetivo">
+                    <option value="perder_peso">Perder Peso</option>
+                    <option value="ganar_musculo">Ganar Músculo</option>
+                    <option value="resistencia">Mejorar Resistencia</option>
+                </select>
+            </div>
+            <button class="btn-enviar" onclick="enviarFormulario()">Enviar Mensaje 💪</button>
+        </div>
+    </section>
+
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="modal-body"></div>
+            <button class="btn-cerrar" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <footer><p>© 2026 Fitness Pro</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
