@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💪 Fitness Pro</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#rutinas">Rutinas</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h2>Transforma tu cuerpo</h2>
+  <p>Entrena como un profesional</p>
+  <button onclick="saludo()">Empieza ahora</button>
+</section>
+
+<section id="rutinas">
+  <h2>Rutinas</h2>
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" />
+      <h3>🏋️ Fuerza</h3>
+      <p>Gana músculo y potencia</p>
+      <button onclick="verRutina('fuerza')">Ver</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" />
+      <h3>🏃 Cardio</h3>
+      <p>Quema grasa y mejora resistencia</p>
+      <button onclick="verRutina('cardio')">Ver</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
+      <h3>🔥 HIIT</h3>
+      <p>Entrenamiento intenso</p>
+      <button onclick="verRutina('hiit')">Ver</button>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="galeria">
+    <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c">
+    <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b">
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <input type="text" id="nombre" placeholder="Tu nombre">
+  <button onclick="enviar()">Enviar</button>
+</section>
+
+<footer>
+  <p>© 2026 Fitness Pro</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html> 
